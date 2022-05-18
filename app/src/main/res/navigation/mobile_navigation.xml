@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_blank_fragment"
+        android:name="com.example.projectconsulting.BlankFragment"
+        android:label=""
+        tools:layout="@layout/blank_fragment"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.projectconsulting.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home"
+        />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.projectconsulting.ui.perfil.PerfilFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_perfil"
+        />
+
+
+
+    <fragment
+        android:id="@+id/nav_autoevaluar"
+        android:name="com.example.projectconsulting.AutoevaluarBien"
+        android:label="Graficos Autoevaluacion"
+        tools:layout="@layout/fragment_autoevaluar"
+        />
+
+    <fragment
+        android:id="@+id/nav_graficos"
+        android:name="com.example.projectconsulting.GraficoAlumno"
+        android:label="Graficos Autoevaluacion"
+        tools:layout="@layout/fragment_graficoalumno"
+        />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_evaluarProfeAlumno"-->
+<!--        android:name="com.example.projectconsulting.profeAlumno"-->
+<!--        android:label="Graficos Autoevaluacion"-->
+<!--        tools:layout="@layout/fragment_evaluarprofesoraalumno"-->
+<!--        />-->
+
+    <fragment
+        android:id="@+id/nav_listaProfesAlumnos"
+        android:name="com.example.projectconsulting.ListaAlumnos"
+        android:label="Lista de alumnos"
+        tools:layout="@layout/fragment_listalumnos"
+
+        />
+
+    <fragment
+        android:id="@+id/nav_fragmentlistalumnosAlumnos"
+        android:name="com.example.projectconsulting.AlumnoaAlumno"
+        android:label="Evaluar alumno alumno"
+        tools:layout="@layout/fragment_listalumnos"
+
+        />
+
+    <fragment
+        android:id="@+id/nav_botchat"
+        android:name="com.example.projectconsulting.ui.Report"
+        android:label="Evaluar alumno alumno"
+        tools:layout="@layout/fragment_report_layout"
+
+        />
+
+
+
+
+
+</navigation>

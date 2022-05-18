@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.autoevaluar.EvaluarProfeAlumno"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:id="@+id/evaluar_background">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/ViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_centerInParent="true"
+        android:clipToPadding="false"
+        android:foregroundGravity="center"
+        android:overScrollMode="never"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/Pgrs1"
+                android:progressTint="@color/light_greenTitle"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:indeterminateOnly="false"
+                android:progress="50"
+                android:progressDrawable="@drawable/cercle"
+                android:rotation="-90"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TxtPuntuacionAlumno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="@+id/Pgrs1"
+                app:layout_constraintEnd_toEndOf="@+id/Pgrs1"
+                app:layout_constraintStart_toStartOf="@+id/Pgrs1"
+                app:layout_constraintTop_toTopOf="@+id/Pgrs1"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/FltBtnEvalua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_greenTitle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Pgrs1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_save"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <SeekBar
+            android:id="@+id/Seek1"
+            android:progressDrawable="@drawable/custom_seek_bar_little"
+            android:thumb="@drawable/custom_thumb"
+            android:layout_width="250dp"
+            android:splitTrack="false"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:thumbTint="@color/light_greenTitle"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxNoContestar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No quiero puntuar esta kpi"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

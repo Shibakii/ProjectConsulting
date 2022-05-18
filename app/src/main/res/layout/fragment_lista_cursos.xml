@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:ignore="MissingDefaultResource"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal">
+
+        <!-- Nombre del alumno (Conectado como usuario) -->
+        <TextView
+            android:id="@+id/fragment_userName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nombre del alumno"/>
+
+        <!-- Curso del alumno -->
+        <TextView
+            android:id="@+id/fragment_academicYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CURSO"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <!-- Separador -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/greenBackground"
+        android:layout_marginHorizontal="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="7dp"
+        android:orientation="horizontal">
+
+        <!-- Boton (Filtro) Alumnos -->
+        <Button
+            android:id="@+id/fragment_buttonStudents"
+            android:layout_width="0dp"
+            android:backgroundTint="@color/greenBackground"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="Alumnos"
+            android:layout_marginRight="6dp"/>
+
+        <!-- Boton (Filtro) Profesores -->
+        <Button
+            android:id="@+id/fragment_buttonTeachers"
+            android:layout_width="0dp"
+            android:backgroundTint="@color/greenBackground"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="Profesor"
+            android:layout_marginRight="6dp"/>
+
+        <!-- Texto (Filtro) Por nombres -->
+        <EditText
+            android:id="@+id/fragment_listSearcher"
+            android:layout_width="0dp"
+            android:backgroundTint="@color/greenBackground"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:text="Buscar..."/>
+
+    </LinearLayout>
+
+    <!-- Lista de usuarios -->
+    <ListView
+        android:id="@+id/fragment_studentsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

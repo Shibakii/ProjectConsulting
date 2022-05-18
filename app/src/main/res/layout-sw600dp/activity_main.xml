@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioActivity">
+
+    <LinearLayout
+        android:id="@+id/intro_introduccionApp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/intro_introduccionImg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:padding="65dp"
+            android:src="@drawable/icono_hasta_que_haya_otro" />
+
+        <TextView
+            android:id="@+id/intro_introduccionText"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="85dp"
+            android:textColor="@color/greenTitle"
+            android:text="◄ Skill Up ►"/>
+
+    </LinearLayout>
+
+</LinearLayout>

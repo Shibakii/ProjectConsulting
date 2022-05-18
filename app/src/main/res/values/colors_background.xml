@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <array name="arrayColores">
+        <item name="color1">#FFBB86FC</item>
+        <item name="color2">#FF6200EE</item>
+        <item name="color3">#FF3700B3</item>
+        <item name="color4">#FF03DAC5</item>
+        <item name="color5">#FF018786</item>
+        <item name="color6">#FF000000</item>
+        <item name="color7">#FFFFFFFF</item>
+    </array>
+
+
+</resources>

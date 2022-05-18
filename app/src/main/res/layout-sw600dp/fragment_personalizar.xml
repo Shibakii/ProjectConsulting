@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".PersonalizarFragment"
+    android:orientation="vertical"
+    android:id="@+id/personalizar_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personalizació de la APP"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:elegantTextHeight="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modos personalizado"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:paddingLeft="30dp"
+            android:elegantTextHeight="true"
+            android:paddingBottom="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="- Color de Fondo"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:paddingLeft="40dp"
+                android:elegantTextHeight="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="- Color de Menú"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:paddingLeft="40dp"
+                android:elegantTextHeight="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:paddingHorizontal="30dp">
+
+            <Button
+                android:id="@+id/BtnSetColorBack"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="COLOR"
+                android:backgroundTint="@color/light_greenTitle"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/BtnSetColorMenu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:text="COLOR"
+                android:backgroundTint="@color/light_greenTitle"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/guardarCambios"
+        android:layout_width="450dp"
+        android:layout_height="80dp"
+        android:textSize="25dp"
+        android:text="GUARDAR CAMBIOS"
+        android:backgroundTint="@color/greenTitle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

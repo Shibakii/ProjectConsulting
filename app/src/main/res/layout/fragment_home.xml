@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homefragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.home.HomeFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal">
+
+        <!-- Nombre del alumno (Conectado como usuario) -->
+        <TextView
+            android:id="@+id/nombreUser_home"
+            android:layout_width="0dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nombre del alumno"/>
+
+        <!-- Curso del alumno -->
+        <TextView
+            android:id="@+id/nombreCurso_home"
+            android:layout_width="0dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CURSO"
+            android:textStyle="bold"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <!-- Separador -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/greenBackground"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/borders"
+        android:layout_marginBottom="5dp">
+
+        <Spinner
+            android:id="@+id/spinnerHome"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/horarios"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_centerInParent="true"
+        android:clipToPadding="false"
+        android:foregroundGravity="center"
+        android:overScrollMode="never">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

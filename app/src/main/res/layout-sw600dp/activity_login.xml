@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:id="@+id/login_background">
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:layout_marginRight="250dp"
+            android:layout_gravity="left"
+            android:src="@drawable/icono_hasta_que_haya_otro"/>
+
+        <ImageButton
+            android:id="@+id/login_infoButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="10dp"
+            android:padding="25dp"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_gravity="right"
+            android:src="@drawable/infobutton"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:padding="63dp"
+            android:layout_gravity="left"
+            android:src="@drawable/imagen_redondeada"/>
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/usuario"
+            android:textSize="35dp"
+            android:layout_width="450dp"
+            android:layout_height="60dp"
+            android:background="@drawable/borders"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:hint="Usuari"
+            android:layout_marginBottom="40dp"/>
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/contrasenya"
+            android:textSize="35dp"
+            android:layout_width="450dp"
+            android:layout_height="60dp"
+            android:hint="Contrasenya"
+            android:padding="10dp"
+            android:background="@drawable/borders"
+            android:layout_gravity="center_horizontal"/>
+
+        <CheckBox
+            android:id="@+id/mostrarcontrasenia"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.25"
+            android:text="Mostrar contraseña" />
+
+        <Button
+            android:id="@+id/login_loginButton"
+            android:layout_width="350dp"
+            android:textSize="35dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/greenTitle"
+            android:text="Login"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <Button
+            android:layout_width="450dp"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:text="Continuar con Google"
+            android:backgroundTint="@color/black"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+
+
+            />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"/>
+
+    </LinearLayout>
+
+</LinearLayout>
